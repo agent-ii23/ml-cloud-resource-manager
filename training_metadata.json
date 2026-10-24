@@ -1,0 +1,6 @@
+{
+  "capacity_rps": 2.5806451612903225,
+  "horizon_minutes": 5,
+  "synthetic": true,
+  "calibrated": true
+}

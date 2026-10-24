@@ -1,0 +1,15 @@
+{
+  "policy": "predictive",
+  "complete": true,
+  "attempted": 1545,
+  "error_pct": 1.6828478964401294,
+  "sla_violation_pct": 1.7475728155339805,
+  "p95_success_latency_ms": 843.8479500415269,
+  "generator_backlog": 0,
+  "avg_measured_cpu_pct": 2.043165043284422,
+  "workload_instance_hours": 0.4712382902222129,
+  "compute_cost_model_usd": 0.0062203454309332105,
+  "energy_model_kwh": 0.004853188538348359,
+  "preflight_wall_seconds": 24.892883499967866,
+  "note": "Instance-hours/cost cover sampled workload only; exclude setup, calibration, preflight, shutdown, EBS, IPv4 and transfer. Energy assumes 10W idle/25W full CPU per VM; missing CPU assumed idle."
+}
