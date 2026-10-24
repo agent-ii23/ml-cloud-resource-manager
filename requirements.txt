@@ -1,0 +1,10 @@
+numpy
+pandas
+scikit-learn
+matplotlib
+joblib
+requests
+boto3
+flask
+locust
+psutil

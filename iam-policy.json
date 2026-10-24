@@ -1,0 +1,28 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ReadEC2ForDemoAndCleanup",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:DescribeInstances",
+        "ec2:DescribeInstanceStatus",
+        "ec2:DescribeInstanceCreditSpecifications",
+        "ec2:DescribeRegions",
+        "ec2:DescribeVolumes",
+        "ec2:DescribeAddresses",
+        "ec2:DescribeSnapshots",
+        "ec2:DescribeImages",
+        "ec2:DescribeSecurityGroups"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "StartStopTaggedDemoWorkersOnly",
+      "Effect": "Allow",
+      "Action": ["ec2:StartInstances", "ec2:StopInstances"],
+      "Resource": "arn:aws:ec2:ap-southeast-2:312106748032:instance/*",
+      "Condition": {"StringEquals": {"ec2:ResourceTag/Project": "CloudML"}}
+    }
+  ]
+}
